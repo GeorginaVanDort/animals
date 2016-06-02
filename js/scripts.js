@@ -3,6 +3,9 @@ $(document).ready(function() {
   $("#animal").change(function(){
     var animal = $("#animal").val();
 
+    $("#animal").hide();
+    $("#animal").show(animal);
+
     if (animal === "zebras") {
       $('#zebras').show();
     } else if (animal === "snakes") {
